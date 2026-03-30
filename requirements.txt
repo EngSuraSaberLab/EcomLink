@@ -1,0 +1,10 @@
+﻿# Django core
+Django==6.0.2
+
+# Images
+pillow==12.1.1
+
+# Django runtime dependencies
+asgiref==3.11.1
+sqlparse==0.5.5
+tzdata==2025.3

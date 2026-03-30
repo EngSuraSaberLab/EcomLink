@@ -1,0 +1,368 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="h-100" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Book Store</title>
+  
+  <meta name="static-showcase-mode" content="true" />
+  
+  <script defer src="/EcomLink/assets/js/830.66d67bb4.js"></script>
+  <script defer src="/EcomLink/assets/js/app.2fe33112.js"></script>
+  <link href="/EcomLink/assets/css/830.css" rel="stylesheet">
+  <link href="/EcomLink/assets/css/app.css" rel="stylesheet">
+  
+  <style>
+    .showcase-modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.62);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      z-index: 1055;
+    }
+
+    .showcase-modal-backdrop.is-open {
+      display: flex;
+    }
+
+    .showcase-modal-card {
+      width: min(520px, 100%);
+      border: 0;
+      border-radius: 24px;
+      background: linear-gradient(135deg, #102542 0%, #244f7a 100%);
+      color: #fff;
+      box-shadow: 0 28px 60px rgba(15, 23, 42, 0.35);
+      padding: 2rem 1.75rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .showcase-modal-close {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      width: 42px;
+      height: 42px;
+      border: 0;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.14);
+      color: #fff;
+      font-size: 1.35rem;
+      line-height: 1;
+    }
+
+    html[dir="rtl"] .showcase-modal-close {
+      right: auto;
+      left: 14px;
+    }
+
+    .showcase-modal-icon {
+      width: 86px;
+      height: 86px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.12);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .showcase-modal-text {
+      font-size: 1.2rem;
+      line-height: 1.9;
+      font-weight: 600;
+      margin: 0 0 1.5rem;
+    }
+
+    .showcase-modal-action {
+      border: 0;
+      border-radius: 999px;
+      padding: 0.9rem 2rem;
+      background: linear-gradient(135deg, #f59e0b 0%, #f97316 100%);
+      color: #fff;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      min-width: 180px;
+    }
+  </style>
+  
+</head>
+<body class="d-flex flex-column h-100 bg-light"
+  
+  data-static-showcase-mode="true"
+  data-static-showcase-base-path="/EcomLink"
+  data-static-showcase-contact-url="https://mostaql.com/u/I_am_Sura"
+  data-static-showcase-message-en="This is a static showcase. Please contact me through my Mostaql account to start your project."
+  data-static-showcase-message-ar="هذا الموقع نسخة عرض ثابتة. يرجى التواصل معي عبر حسابي على مستقل لبدء مشروعك."
+  data-static-showcase-button-en="Open Mostaql"
+  data-static-showcase-button-ar="فتح مستقل"
+  
+>
+  
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+  <div class="container">
+    <a class="navbar-brand" href="/EcomLink/">Book Store</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbarContent"
+      aria-controls="mainNavbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mt-2 mt-lg-0" id="mainNavbarContent">
+      <div class="w-100 d-flex align-items-center gap-2 flex-wrap flex-lg-nowrap">
+        <div class="flex-grow-1 order-2 order-lg-1" style="min-width: 0;">
+          
+<form class="d-flex mx-auto w-100 showcase-contact-trigger" action="/EcomLink/category/" method="get">
+  <div class="input-group flex-nowrap">
+    <input type="text" name="q" value="" class="form-control" placeholder="Search products" readonly />
+    <select name="category" class="form-select d-none d-sm-block" style="max-width: 160px" disabled>
+      <option value="">Categories</option>
+      
+      <option value="item" >كتب</option>
+      
+    </select>
+    <button class="btn btn-primary flex-shrink-0" type="button">
+      <i class="lni lni-search-alt text-white"></i>
+    </button>
+  </div>
+</form>
+
+        </div>
+        <ul class="navbar-nav my-0 d-flex flex-row align-items-center gap-2 ms-lg-auto order-1 order-lg-2">
+          <li class="nav-item d-flex align-items-center">
+            <a href="/EcomLink/cart/" class="btn btn-light border btn-sm text-dark text-nowrap d-inline-flex align-items-center px-3 showcase-contact-trigger" type="button">
+              Cart (<span id="cart-item-count">0</span>)
+            </a>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            
+            <div class="d-flex align-items-center gap-2">
+              <a href="/EcomLink/ar/" class="btn btn-outline-secondary btn-sm ">AR</a>
+              <a href="/EcomLink/" class="btn btn-outline-secondary btn-sm active">EN</a>
+            </div>
+            
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <div class="container">
+    <div class="navbar-collapse mt-2 mt-lg-0">
+      <ul class="navbar-nav my-2 my-lg-0">
+        
+        <li class="nav-item">
+          <a class="nav-link mx-1" href="/EcomLink/category/item/" role="button">
+            كتب
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <main>
+    
+<div id="googleMap" style="width: 100%; height: 400px"></div>
+<div class="container my-5">
+  <section>
+    <div class="col-md-12 mb-5">
+      <p class="h1 text-center text-secondary">Contact Us</p>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-12">
+        <div class="card">
+          <div class="card-body">
+            <form class="showcase-contact-trigger">
+              <div class="mb-3">
+                <label for="inputName" class="form-label">Name</label>
+                <input type="text" class="form-control" id="inputName" readonly />
+              </div>
+              <div class="mb-3">
+                <label for="inputEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail" readonly />
+              </div>
+              <div class="mb-3">
+                <label for="inputSubject" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="inputSubject" readonly />
+              </div>
+              <div class="mb-3">
+                <label for="inputMessage" class="form-label">Message</label>
+                <textarea class="form-control" id="inputMessage" rows="6" readonly></textarea>
+              </div>
+              <button type="button" class="btn btn-primary showcase-contact-trigger">Open Mostaql</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-12 mt-4 mt-lg-0">
+        <div class="card mb-3">
+          <div class="card-header">Categories</div>
+          <ul class="list-group list-group-flush">
+            
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <a href="/EcomLink/category/item/" class="text-decoration-none">كتب</a>
+            </li>
+            
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-header">Featured Products</div>
+          <ul class="list-group list-group-flush">
+            
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <a href="/EcomLink/product/item-8/" class="text-decoration-none">الإنسان يبحث عن معنى</a>
+              <small>15.75 $</small>
+            </li>
+            
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <a href="/EcomLink/product/item-7/" class="text-decoration-none">العمى</a>
+              <small>19.40 $</small>
+            </li>
+            
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <a href="/EcomLink/product/item-6/" class="text-decoration-none">الأمير الصغير</a>
+              <small>13.90 $</small>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+  </main>
+  
+<footer class="footer mt-auto py-4 bg-secondary">
+  <div class="container text-center">
+    <span class="text text-light">&copy; 2022 All rights reserved.</span>
+  </div>
+</footer>
+
+  <script>
+    (function () {
+      const forms = document.querySelectorAll(".js-cart-add-form");
+      if (!forms.length) return;
+
+      forms.forEach(function (form) {
+        form.addEventListener("submit", async function (event) {
+          event.preventDefault();
+
+          const submitBtn = form.querySelector("button[type='submit']");
+          if (submitBtn) submitBtn.disabled = true;
+
+          try {
+            const response = await fetch(form.action, {
+              method: "POST",
+              body: new FormData(form),
+              headers: { "X-Requested-With": "XMLHttpRequest" },
+              credentials: "same-origin",
+            });
+            if (!response.ok) throw new Error("Request failed");
+
+            const payload = await response.json();
+            if (!payload.ok) throw new Error("Invalid response");
+
+            const cartCount = document.getElementById("cart-item-count");
+            if (cartCount && typeof payload.cart_count !== "undefined") {
+              cartCount.textContent = payload.cart_count;
+            }
+
+            const card = form.closest(".card");
+            const indicator = card ? card.querySelector(".js-added-indicator") : null;
+            if (indicator) {
+              indicator.classList.remove("d-none");
+              setTimeout(function () {
+                indicator.classList.add("d-none");
+              }, 1200);
+            }
+          } catch (error) {
+            form.submit();
+          } finally {
+            if (submitBtn) submitBtn.disabled = false;
+          }
+        });
+      });
+    })();
+  </script>
+  
+  <div class="showcase-modal-backdrop" id="showcase-contact-modal" aria-hidden="true">
+    <div class="showcase-modal-card text-center">
+      <button type="button" class="showcase-modal-close" aria-label="Close" data-showcase-close>&times;</button>
+      <div class="showcase-modal-icon">
+        <i class="lni lni-bullhorn"></i>
+      </div>
+      <p class="showcase-modal-text" id="showcase-contact-message"></p>
+      <a class="showcase-modal-action" id="showcase-contact-action" href="#" target="_blank" rel="noopener"></a>
+    </div>
+  </div>
+  <script>
+    (function () {
+      const root = document.body;
+      if (!root || root.dataset.staticShowcaseMode !== "true") return;
+
+      const modal = document.getElementById("showcase-contact-modal");
+      const messageEl = document.getElementById("showcase-contact-message");
+      const actionEl = document.getElementById("showcase-contact-action");
+      if (!modal || !messageEl || !actionEl) return;
+
+      const lang = document.documentElement.lang === "ar" ? "ar" : "en";
+      const message = lang === "ar" ? root.dataset.staticShowcaseMessageAr : root.dataset.staticShowcaseMessageEn;
+      const buttonLabel = lang === "ar" ? root.dataset.staticShowcaseButtonAr : root.dataset.staticShowcaseButtonEn;
+      actionEl.href = root.dataset.staticShowcaseContactUrl || "#";
+      messageEl.textContent = message || "";
+      actionEl.textContent = buttonLabel || "";
+
+      function openModal(event) {
+        if (event) event.preventDefault();
+        modal.classList.add("is-open");
+        modal.setAttribute("aria-hidden", "false");
+      }
+
+      function closeModal() {
+        modal.classList.remove("is-open");
+        modal.setAttribute("aria-hidden", "true");
+      }
+
+      document.querySelectorAll(".showcase-contact-trigger").forEach(function (node) {
+        node.addEventListener("click", openModal);
+      });
+
+      modal.addEventListener("click", function (event) {
+        if (event.target === modal || event.target.hasAttribute("data-showcase-close")) {
+          closeModal();
+        }
+      });
+
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") closeModal();
+      });
+    })();
+  </script>
+  
+  
+<script>
+  function myMap() {
+    var mapProp = {
+      center: new google.maps.LatLng(51.508742, -0.12085),
+      zoom: 5,
+    };
+    var map = new google.maps.Map(
+      document.getElementById("googleMap"),
+      mapProp
+    );
+  }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdMc7__pz1RhKHcZL1-X7mHpcohPboKu4&callback=myMap"></script>
+
+</body>
+</html>

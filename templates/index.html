@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block content %}
+{% include 'partials/slider.html' %}
+<div class="container my-5">
+  <section>
+    <div class="col-md-12 mb-5">
+      <p class="h1 text-center text-secondary">{% trans "Featured Books" %}</p>
+    </div>
+    <div class="row">
+      {% for product in products %}
+      {% include 'common/product_card.html' with product=product col_class='col-md-3' %}
+      {% empty %}
+      <div class="col-12">
+        <p class="text-center text-muted">{% trans "No products available right now." %}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+</div>
+{% endblock %}

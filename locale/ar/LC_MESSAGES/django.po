@@ -1,0 +1,201 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: EcomProject\n"
+"POT-Creation-Date: 2026-02-17 00:00+0000\n"
+"PO-Revision-Date: 2026-02-17 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+msgid "Book Store"
+msgstr "متجر الكتب"
+
+msgid "Cart"
+msgstr "السلة"
+
+msgid "Add to Cart"
+msgstr "أضف إلى السلة"
+
+msgid "View"
+msgstr "عرض"
+
+msgid "No Author"
+msgstr "بدون مؤلف"
+
+msgid "Search products"
+msgstr "ابحث عن المنتجات"
+
+msgid "Categories"
+msgstr "الفئات"
+
+msgid "All rights reserved."
+msgstr "جميع الحقوق محفوظة."
+
+msgid "No slider items yet"
+msgstr "لا توجد عناصر سلايدر بعد"
+
+msgid "Please add slider rows from admin panel."
+msgstr "الرجاء إضافة عناصر السلايدر من لوحة الإدارة."
+
+msgid "Featured Books"
+msgstr "كتب مميزة"
+
+msgid "No products available right now."
+msgstr "لا توجد منتجات حاليا."
+
+msgid "Search results for:"
+msgstr "نتائج البحث عن:"
+
+msgid "Within category:"
+msgstr "داخل فئة:"
+
+msgid "({{ counter }} result)"
+msgid_plural "({{ counter }} results)"
+msgstr[0] "(لا نتائج)"
+msgstr[1] "(نتيجة واحدة)"
+msgstr[2] "(نتيجتان)"
+msgstr[3] "({{ counter }} نتائج)"
+msgstr[4] "({{ counter }} نتيجة)"
+msgstr[5] "({{ counter }} نتيجة)"
+
+msgid "All"
+msgstr "الكل"
+
+msgid "No products in this category."
+msgstr "لا توجد منتجات في هذه الفئة."
+
+msgid "Home"
+msgstr "الرئيسية"
+
+msgid "Author:"
+msgstr "الكاتب:"
+
+msgid "Unspecified"
+msgstr "غير محدد"
+
+msgid "Date added:"
+msgstr "تاريخ الإضافة:"
+
+msgid "Description"
+msgstr "الوصف"
+
+msgid "Author"
+msgstr "الكاتب"
+
+msgid "Related Products"
+msgstr "منتجات مرتبطة"
+
+msgid "View More"
+msgstr "عرض المزيد"
+
+msgid "No related products yet."
+msgstr "لا توجد منتجات مرتبطة حاليا."
+
+msgid "No product to display."
+msgstr "لا يوجد منتج لعرضه."
+
+msgid "Shopping Cart"
+msgstr "سلة المشتريات"
+
+msgid "Clear Cart"
+msgstr "تفريغ السلة"
+
+msgid "Update"
+msgstr "تحديث"
+
+msgid "Delete"
+msgstr "حذف"
+
+msgid "Your cart is currently empty."
+msgstr "سلة المشتريات فارغة حاليا."
+
+msgid "Price"
+msgstr "السعر"
+
+msgid "Total"
+msgstr "المجموع"
+
+msgid "Proceed to Checkout"
+msgstr "متابعة إلى إتمام الطلب"
+
+msgid "Add products first"
+msgstr "أضف منتجات أولا"
+
+msgid "Checkout"
+msgstr "الدفع"
+
+msgid "Amount"
+msgstr "المبلغ"
+
+msgid "Your Information"
+msgstr "معلوماتك الشخصية"
+
+msgid "First Name"
+msgstr "الاسم"
+
+msgid "Last Name"
+msgstr "الكنية"
+
+msgid "Email"
+msgstr "بريد إلكتروني"
+
+msgid "Payment Method"
+msgstr "وسيلة الدفع"
+
+msgid "PayPal"
+msgstr "بايبال"
+
+msgid "Credit Card"
+msgstr "بطاقة ائتمانية"
+
+msgid "Order Summary"
+msgstr "ملخص الطلب"
+
+msgid "No products."
+msgstr "لا توجد منتجات."
+
+msgid "Complete Purchase"
+msgstr "إتمام عملية الشراء"
+
+msgid "No products to checkout"
+msgstr "لا توجد منتجات للدفع"
+
+msgid "Order Complete"
+msgstr "اكتمل الطلب"
+
+msgid "Order #{{ order_id }} was created with total {{ order_total }} $."
+msgstr "تم إنشاء الطلب رقم #{{ order_id }} بإجمالي {{ order_total }} $."
+
+msgid "Your purchase was completed successfully."
+msgstr "لقد تمت عملية الشراء بنجاح."
+
+msgid "Back to Home"
+msgstr "عودة إلى الصفحة الرئيسية"
+
+msgid "Contact Us"
+msgstr "اتصل بنا"
+
+msgid "Name"
+msgstr "الاسم"
+
+msgid "Subject"
+msgstr "الموضوع"
+
+msgid "Message"
+msgstr "الرسالة"
+
+msgid "Send"
+msgstr "إرسال"
+
+msgid "No categories available"
+msgstr "لا توجد فئات"
+
+msgid "Featured Products"
+msgstr "منتجات مميزة"
+
+msgid "No products available"
+msgstr "لا توجد منتجات"
